@@ -2,8 +2,8 @@ export const FETCH_GITHUB = 'FETCH_GITHUB';
 
 
 
-export const fetchGithub = 
-const token = '8a6992c51c5eafcd01ce9c6a55cee060ae664512';
+export const fetchGithub =
+const token = 'token here';
       fetch('https://api.github.com/user/lcanada', {
       headers: {
         Authorization: `token ${token}`
