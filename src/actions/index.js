@@ -1,7 +1,7 @@
 export const FETCH_GITHUB = 'FETCH_GITHUB';
 
 export const fetchGithub = () => {
- const token = 'e2df78c12aeb7efa365d550b48236a74c5e77a9e';
+ const token = 'token here';
       fetch('https://api.github.com/users/Lcanada', {
       headers: {
         Authorization: `token ${token}`
