@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetch } from '../actions/index';
+import { fetchGithub } from '../actions/index';
 import { bindActionCreators } from 'redux';
 import '../App.css';
 
-class UserRequest extends Component(){
+class UserRequest extends Component{
   constructor(props){
     super(props);
 
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick(event){
-    return this.props.fetch()
+    return this.props.fetchGithub()
   }
 
   render(){
     return(
-      <p>
+      <div>
         <h1>Click for Lynn's resume!</h1>
         <button onClick={this.handleClick}> Click Here </button>
-      </p>
+      </div>
     )
   }
 }
